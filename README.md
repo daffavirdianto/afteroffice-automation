@@ -9,8 +9,7 @@ Proyek ini berisi **otomatisasi pengujian API** menggunakan Java + Rest Assured 
 - Maven  
 - Rest Assured  
 - TestNG  
-- JSON  
-- (Opsional) Allure Report  
+- JSON
 
 ---
 
