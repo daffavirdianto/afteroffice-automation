@@ -20,7 +20,7 @@ public class RestAssuredImpl {
     public void testRegister() {
 
         String requestBody = "{\n" +
-            "  \"email\": \"daffa.virdianto3@gmail.com\",\n" +
+            "  \"email\": \"daffa.virdianto5@gmail.com\",\n" +
             "  \"full_name\": \"Daffa Virdianto\",\n" +
             "  \"password\": \"D@ffa123\",\n" +
             "  \"department\": \"manager\",\n" +
@@ -37,7 +37,7 @@ public class RestAssuredImpl {
         System.out.println("Response: " + response.asPrettyString());
 
         assert response.statusCode() == 200 : "Registration failed";
-        assert response.jsonPath().getString("email").equals("daffa.virdianto3@gmail.com") : "Email mismatch";
+        assert response.jsonPath().getString("email").equals("daffa.virdianto5@gmail.com") : "Email mismatch";
         assert response.jsonPath().getString("full_name").equals("Daffa Virdianto") : "Full name mismatch";
         assert response.jsonPath().getString("department").equals("manager") : "Department mismatch";
         assert response.jsonPath().getString("phone_number").equals("081325018827") : "Phone number mismatch";
@@ -231,7 +231,7 @@ public class RestAssuredImpl {
                 .body(requestBody)
                 .log().all()
                 .when()
-                .patch("/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/12");
+                .patch("/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/13");
         
         System.out.println("Response: " + response.asPrettyString());
         assert response.statusCode() == 200 : "Failed to partially update object";
