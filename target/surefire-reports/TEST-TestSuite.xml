@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="3.684" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="8.636" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\Daffa Virdianto\AppData\Local\Temp\surefire11225706134124869284\surefirebooter-20250518112621607_3.jar C:\Users\Daffa Virdianto\AppData\Local\Temp\surefire11225706134124869284 2025-05-18T11-26-21_515-jvmRun1 surefire-20250518112621607_1tmp surefire_0-20250518112621607_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Daffa Virdianto\AppData\Local\Temp\surefire18200339742734963693\surefirebooter-20250519091724350_3.jar C:\Users\Daffa Virdianto\AppData\Local\Temp\surefire18200339742734963693 2025-05-19T09-17-24_263-jvmRun1 surefire-20250519091724350_1tmp surefire_0-20250519091724350_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Daffa Virdianto\apiautomation\target\test-classes;C:\Users\Daffa Virdianto\apiautomation\target\classes;C:\Users\Daffa Virdianto\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\Daffa Virdianto\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Daffa Virdianto\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Daffa Virdianto\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Daffa Virdianto\.m2\repository\io\rest-assured\rest-assured\5.5.2\rest-assured-5.5.2.jar;C:\Users\Daffa Virdianto\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\Daffa Virdianto\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\Daffa Virdianto\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Daffa Virdianto\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Daffa Virdianto\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Daffa Virdianto\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Daffa Virdianto\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Daffa Virdianto\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Daffa Virdianto\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Daffa Virdianto\.m2\repository\io\rest-assured\json-path\5.5.2\json-path-5.5.2.jar;C:\Users\Daffa Virdianto\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\Daffa Virdianto\.m2\repository\io\rest-assured\rest-assured-common\5.5.2\rest-assured-common-5.5.2.jar;C:\Users\Daffa Virdianto\.m2\repository\io\rest-assured\xml-path\5.5.2\xml-path-5.5.2.jar;C:\Users\Daffa Virdianto\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Daffa Virdianto\AppData\Local\Temp\surefire11225706134124869284\surefirebooter-20250518112621607_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Daffa Virdianto\AppData\Local\Temp\surefire18200339742734963693\surefirebooter-20250519091724350_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+8-LTS-245"/>
@@ -58,3673 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testLogin" classname="restassured.RestAssuredImpl" time="1.291">
-    <system-out><![CDATA[Request method:	POST
-Request URI:	https://whitesmokehouse.com/webhook/api/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "email": "daffa.virdianto@gmail.com",
-    "password": "D@ffa123"
-}
-Response: {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU4IiwiaWF0IjoxNzQ3NTQyMzg0fQ.0qR4baNsZA0b5RrN_L_RIGxkK4Dipuj5d-XcDSHwvSQ"
-}
-]]></system-out>
-    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
-SLF4J(W): Defaulting to no-operation (NOP) logger implementation
-SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-]]></system-err>
-  </testcase>
-  <testcase name="ListOfObjectsByIds" classname="restassured.RestAssuredImpl" time="0.273">
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://whitesmokehouse.com/webhook/api/objects/?id=3
-Proxy:			<none>
-Request params:	id=3
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU4IiwiaWF0IjoxNzQ3NTQyMzg0fQ.0qR4baNsZA0b5RrN_L_RIGxkK4Dipuj5d-XcDSHwvSQ
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Response: [
-    {
-        "id": 21,
-        "name": "Asus VivoBook X1404VA-NK467",
-        "data": {
-            "year": "2024",
-            "price": "7000000",
-            "CPU model": "Intel Core i5-1335U CPU @ 1.30 Ghz Up to 4.6 GHz",
-            "Hard disk size": "512GB SSD M2 NVMe",
-            "color": "black",
-            "capacity": 10,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 13,
-        "name": "Apple MacBook Pro 1611-daffa",
-        "data": {
-            "year": "2030",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 25,
-        "name": "Apple MacBook Pro 1611-albert12",
-        "data": {
-            "year": "2030",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 26,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 27,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 28,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 72,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 30,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 31,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 66,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 67,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 37,
-        "name": "Acer Aspire Lite AL14-52M-54V4 2025",
-        "data": {
-            "year": "2023",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB SSD M2 NVME",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 15.4
-        }
-    },
-    {
-        "id": 55,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 32,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 33,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 34,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 9,
-        "name": "Apple MacBook Pro 1611-albert",
-        "data": {
-            "year": "null",
-            "price": "1849.99",
-            "CPU model": "null",
-            "Hard disk size": "null",
-            "color": "null",
-            "capacity": null,
-            "screen_size": null
-        }
-    },
-    {
-        "id": 56,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 68,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 7,
-        "name": "Apple MacBook Pro 1611-albert",
-        "data": {
-            "year": "null",
-            "price": "1849.99",
-            "CPU model": "null",
-            "Hard disk size": "null",
-            "color": "null",
-            "capacity": null,
-            "screen_size": null
-        }
-    },
-    {
-        "id": 35,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 11,
-        "name": "Apple MacBook Pro 1611-albert",
-        "data": {
-            "year": "null",
-            "price": "1849.99",
-            "CPU model": "null",
-            "Hard disk size": "null",
-            "color": "null",
-            "capacity": null,
-            "screen_size": null
-        }
-    },
-    {
-        "id": 36,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 38,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 39,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 16,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 17,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 40,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 18,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 57,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 58,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 64,
-        "name": "Apple MacBook Pro 1611-albert12",
-        "data": {
-            "year": "2030",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 59,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 22,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 60,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 43,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 44,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 45,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 46,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 47,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 48,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 49,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 50,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 61,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 62,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 63,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 71,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 73,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 74,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 75,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 76,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 77,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 78,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 79,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 80,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 83,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 84,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 85,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 86,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 87,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 88,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 90,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 91,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 122,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 123,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 124,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 93,
-        "name": "Lenovo K14",
-        "data": {
-            "year": "2024",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "black",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 125,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 126,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 95,
-        "name": "Lenovo K14-AB",
-        "data": {
-            "year": "2024",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "black",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 94,
-        "name": "Apple MacBook Pro 1611-albert12",
-        "data": {
-            "year": "2030",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 96,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 98,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 99,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 127,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 100,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 128,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 101,
-        "name": "Apple MacBook Pro 160-DianaPunya",
-        "data": {
-            "year": "2027",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 129,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 130,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 103,
-        "name": "Apple MacBook Pro Zahwa",
-        "data": {
-            "year": "2035",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 131,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 105,
-        "name": "Apple MacBook Pro 16 Yuana Updated2",
-        "data": {
-            "year": "2030",
-            "price": "2000",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "green",
-            "capacity": 2,
-            "screen_size": 16
-        }
-    },
-    {
-        "id": 104,
-        "name": "Lenovo Thinkpad T14s - Drajatp",
-        "data": {
-            "year": "2024",
-            "price": "2049.99",
-            "CPU model": "Intel vPRO Enterprise",
-            "Hard disk size": "500 GB",
-            "color": "black",
-            "capacity": 4,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 107,
-        "name": "Apple MacBook Air M1 azhar partially update",
-        "data": {
-            "year": "2020",
-            "price": "999",
-            "CPU model": "Apple M1 partially update",
-            "Hard disk size": "256 GB",
-            "color": "space grey",
-            "capacity": 8,
-            "screen_size": 13
-        }
-    },
-    {
-        "id": 132,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 110,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 111,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 112,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 113,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 114,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 115,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 116,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 117,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 118,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 119,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 120,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 121,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 133,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 134,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 135,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 136,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 137,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 138,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 139,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 140,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 141,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 142,
-        "name": "[PROMO] Galaxy S10",
-        "data": {
-            "year": "2030",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 143,
-        "name": "[PROMO] Galaxy S10",
-        "data": {
-            "year": "2030",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 147,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 148,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 149,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 152,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 153,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 154,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 160,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 156,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 157,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 158,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 161,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 159,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 155,
-        "name": "Apple MacBook Pro 25 - Alifa Partially Updated",
-        "data": {
-            "year": "2024",
-            "price": "1999.99",
-            "CPU model": "M5",
-            "Hard disk size": "2 TB",
-            "color": "grey",
-            "capacity": 1,
-            "screen_size": 13
-        }
-    },
-    {
-        "id": 162,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 163,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 164,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 165,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 166,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 167,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 171,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 172,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 173,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 174,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 175,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 182,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 179,
-        "name": "Apple MacBook Pro 15",
-        "data": {
-            "year": "2030",
-            "price": "1500.99",
-            "CPU model": "Apple M4",
-            "Hard disk size": "2 TB",
-            "color": "white",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    }
-]
-]]></system-out>
-  </testcase>
-  <testcase name="PartiallyUpdateObject" classname="restassured.RestAssuredImpl" time="0.236">
-    <system-out><![CDATA[Request method:	PATCH
-Request URI:	https://whitesmokehouse.com/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/13
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU4IiwiaWF0IjoxNzQ3NTQyMzg0fQ.0qR4baNsZA0b5RrN_L_RIGxkK4Dipuj5d-XcDSHwvSQ
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "name": "Apple MacBook Pro 1611-daffa",
-    "year": "2030"
-}
-Response: {
-    "id": 13,
-    "name": "Apple MacBook Pro 1611-daffa",
-    "data": {
-        "year": "2030",
-        "price": "1849.99",
-        "cpu_model": "Intel Core i9",
-        "hard_disk_size": "1 TB",
-        "color": "red",
-        "capacity": "2 cpu",
-        "screen_size": "14 Inch"
-    }
-}
-]]></system-out>
-  </testcase>
-  <testcase name="SingleObject" classname="restassured.RestAssuredImpl" time="0.134">
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://whitesmokehouse.com/webhook/8749129e-f5f7-4ae6-9b03-93be7252443c/api/objects/12
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU4IiwiaWF0IjoxNzQ3NTQyMzg0fQ.0qR4baNsZA0b5RrN_L_RIGxkK4Dipuj5d-XcDSHwvSQ
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Response: {
-    
-}
-]]></system-out>
-  </testcase>
-  <testcase name="testGetAllDepartments" classname="restassured.RestAssuredImpl" time="0.194">
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://whitesmokehouse.com/webhook/api/department
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU4IiwiaWF0IjoxNzQ3NTQyMzg0fQ.0qR4baNsZA0b5RrN_L_RIGxkK4Dipuj5d-XcDSHwvSQ
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Response: [
-    {
-        "id": 1,
-        "department": "manager"
-    },
-    {
-        "id": 2,
-        "department": "marketing"
-    },
-    {
-        "id": 3,
-        "department": "sales"
-    },
-    {
-        "id": 4,
-        "department": "store manager"
-    },
-    {
-        "id": 5,
-        "department": "branch manager"
-    },
-    {
-        "id": 6,
-        "department": "branch manager"
-    }
-]
-]]></system-out>
-  </testcase>
-  <testcase name="testGetListAllObjects" classname="restassured.RestAssuredImpl" time="0.219">
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://whitesmokehouse.com/webhook/api/objects
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU4IiwiaWF0IjoxNzQ3NTQyMzg0fQ.0qR4baNsZA0b5RrN_L_RIGxkK4Dipuj5d-XcDSHwvSQ
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Response: [
-    {
-        "id": 21,
-        "name": "Asus VivoBook X1404VA-NK467",
-        "data": {
-            "year": "2024",
-            "price": "7000000",
-            "CPU model": "Intel Core i5-1335U CPU @ 1.30 Ghz Up to 4.6 GHz",
-            "Hard disk size": "512GB SSD M2 NVMe",
-            "color": "black",
-            "capacity": 10,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 13,
-        "name": "Apple MacBook Pro 1611-daffa",
-        "data": {
-            "year": "2030",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 25,
-        "name": "Apple MacBook Pro 1611-albert12",
-        "data": {
-            "year": "2030",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 26,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 27,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 28,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 72,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 30,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 31,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 66,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 67,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 37,
-        "name": "Acer Aspire Lite AL14-52M-54V4 2025",
-        "data": {
-            "year": "2023",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB SSD M2 NVME",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 15.4
-        }
-    },
-    {
-        "id": 55,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 32,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 33,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 34,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 9,
-        "name": "Apple MacBook Pro 1611-albert",
-        "data": {
-            "year": "null",
-            "price": "1849.99",
-            "CPU model": "null",
-            "Hard disk size": "null",
-            "color": "null",
-            "capacity": null,
-            "screen_size": null
-        }
-    },
-    {
-        "id": 56,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 68,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 7,
-        "name": "Apple MacBook Pro 1611-albert",
-        "data": {
-            "year": "null",
-            "price": "1849.99",
-            "CPU model": "null",
-            "Hard disk size": "null",
-            "color": "null",
-            "capacity": null,
-            "screen_size": null
-        }
-    },
-    {
-        "id": 35,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 11,
-        "name": "Apple MacBook Pro 1611-albert",
-        "data": {
-            "year": "null",
-            "price": "1849.99",
-            "CPU model": "null",
-            "Hard disk size": "null",
-            "color": "null",
-            "capacity": null,
-            "screen_size": null
-        }
-    },
-    {
-        "id": 36,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 38,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 39,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 16,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 17,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 40,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 18,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 57,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 58,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 64,
-        "name": "Apple MacBook Pro 1611-albert12",
-        "data": {
-            "year": "2030",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 59,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 22,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 60,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 43,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 44,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 45,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 46,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 47,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 48,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 49,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 50,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 61,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 62,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 63,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 71,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 73,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 74,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 75,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 76,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 77,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 78,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 79,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 80,
-        "name": "Apple MacBook Pro 18",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "blue",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 83,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 84,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 85,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 86,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 87,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 88,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 90,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 91,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 122,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 123,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 124,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 93,
-        "name": "Lenovo K14",
-        "data": {
-            "year": "2024",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "black",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 125,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 126,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 95,
-        "name": "Lenovo K14-AB",
-        "data": {
-            "year": "2024",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "black",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 94,
-        "name": "Apple MacBook Pro 1611-albert12",
-        "data": {
-            "year": "2030",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 96,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 98,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 99,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 127,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 100,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 128,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 101,
-        "name": "Apple MacBook Pro 160-DianaPunya",
-        "data": {
-            "year": "2027",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 129,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 130,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 103,
-        "name": "Apple MacBook Pro Zahwa",
-        "data": {
-            "year": "2035",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 131,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 105,
-        "name": "Apple MacBook Pro 16 Yuana Updated2",
-        "data": {
-            "year": "2030",
-            "price": "2000",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "green",
-            "capacity": 2,
-            "screen_size": 16
-        }
-    },
-    {
-        "id": 104,
-        "name": "Lenovo Thinkpad T14s - Drajatp",
-        "data": {
-            "year": "2024",
-            "price": "2049.99",
-            "CPU model": "Intel vPRO Enterprise",
-            "Hard disk size": "500 GB",
-            "color": "black",
-            "capacity": 4,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 107,
-        "name": "Apple MacBook Air M1 azhar partially update",
-        "data": {
-            "year": "2020",
-            "price": "999",
-            "CPU model": "Apple M1 partially update",
-            "Hard disk size": "256 GB",
-            "color": "space grey",
-            "capacity": 8,
-            "screen_size": 13
-        }
-    },
-    {
-        "id": 132,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 110,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 111,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 112,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 113,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 114,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 115,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 116,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 117,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 118,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 119,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 120,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 121,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 133,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 134,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 135,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 136,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 137,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 138,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 139,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 140,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 141,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 142,
-        "name": "[PROMO] Galaxy S10",
-        "data": {
-            "year": "2030",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 143,
-        "name": "[PROMO] Galaxy S10",
-        "data": {
-            "year": "2030",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 147,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 148,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 149,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "-",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": null,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 152,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 153,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 154,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 160,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 156,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 157,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 158,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 161,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 159,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 155,
-        "name": "Apple MacBook Pro 25 - Alifa Partially Updated",
-        "data": {
-            "year": "2024",
-            "price": "1999.99",
-            "CPU model": "M5",
-            "Hard disk size": "2 TB",
-            "color": "grey",
-            "capacity": 1,
-            "screen_size": 13
-        }
-    },
-    {
-        "id": 162,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 163,
-        "name": "Tab Galaxy S10",
-        "data": {
-            "year": "2025",
-            "price": "1000.87",
-            "CPU model": "iOS 17",
-            "Hard disk size": "1 TB",
-            "color": "Black",
-            "capacity": 255,
-            "screen_size": 7
-        }
-    },
-    {
-        "id": 164,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 165,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 166,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 167,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 171,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 172,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 173,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 174,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 175,
-        "name": "Samsung Flip 17",
-        "data": {
-            "year": "2029",
-            "price": "20987.72",
-            "CPU model": "Exynos",
-            "Hard disk size": "2 GB",
-            "color": "Purple",
-            "capacity": 120,
-            "screen_size": 7.6
-        }
-    },
-    {
-        "id": 182,
-        "name": "Apple MacBook Pro 16",
-        "data": {
-            "year": "2019",
-            "price": "1849.99",
-            "CPU model": "Intel Core i9",
-            "Hard disk size": "1 TB",
-            "color": "red",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    },
-    {
-        "id": 179,
-        "name": "Apple MacBook Pro 15",
-        "data": {
-            "year": "2030",
-            "price": "1500.99",
-            "CPU model": "Apple M4",
-            "Hard disk size": "2 TB",
-            "color": "white",
-            "capacity": 2,
-            "screen_size": 14
-        }
-    }
-]
-]]></system-out>
-  </testcase>
-  <testcase name="testRegister" classname="restassured.RestAssuredImpl" time="0.164">
+  <testcase name="testRegister" classname="restassured.RestAssuredImpl" time="1.855">
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://whitesmokehouse.com/webhook/api/register
 Proxy:			<none>
@@ -3738,24 +72,1363 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "daffa.virdianto4@gmail.com",
+    "email": "daffa.virdianto3@gmail.com",
     "full_name": "Daffa Virdianto",
     "password": "D@ffa123",
-    "department": "manager",
+    "department": "Human Resource",
     "phone_number": "081325018827"
 }
 Response: {
-    "id": "194",
-    "email": "daffa.virdianto4@gmail.com",
+    "id": "152",
+    "email": "daffa.virdianto3@gmail.com",
     "full_name": "Daffa Virdianto",
-    "department": "manager",
+    "department": "Human Resource",
     "phone_number": "081325018827",
-    "create_at": "2025-05-18T04:26:25.771Z",
-    "update_at": "2025-05-18T04:26:25.771Z"
+    "create_at": "2025-05-19T02:17:26.393Z",
+    "update_at": "2025-05-19T02:17:26.393Z"
+}
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testLogin" classname="restassured.RestAssuredImpl" time="0.639">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://whitesmokehouse.com/webhook/api/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "daffa.virdianto1@gmail.com",
+    "password": "D@ffa123"
+}
+Response: {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE0NyIsImlhdCI6MTc0NzYyMTA0N30.g8yhkq2H2IszrECwwS5myUQqo1v1rwSqI3hFX3CPjuI"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testAddObject" classname="restassured.RestAssuredImpl" time="0.212">
+  <testcase name="testGetAllDepartments" classname="restassured.RestAssuredImpl" time="0.696">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://whitesmokehouse.com/webhook/api/department
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE0NyIsImlhdCI6MTc0NzYyMTA0N30.g8yhkq2H2IszrECwwS5myUQqo1v1rwSqI3hFX3CPjuI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Response: [
+    {
+        "id": 1,
+        "department": "Technology"
+    },
+    {
+        "id": 2,
+        "department": "Human Resource"
+    },
+    {
+        "id": 3,
+        "department": "Finance"
+    },
+    {
+        "id": 4,
+        "department": "Executive"
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetListAllObjects" classname="restassured.RestAssuredImpl" time="0.674">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://whitesmokehouse.com/webhook/api/objects
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE0NyIsImlhdCI6MTc0NzYyMTA0N30.g8yhkq2H2IszrECwwS5myUQqo1v1rwSqI3hFX3CPjuI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Response: [
+    {
+        "id": 36,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 40,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 18,
+        "name": "Apple MacBook Pro 1611-albert12",
+        "data": {
+            "year": "2030",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 13,
+        "name": "Apple MacBook Pro 16 - Alifa",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 14,
+        "name": "Apple MacBook Pro 16 - Alifa",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 16,
+        "name": "Apple MacBook Pro 16 - Alifa",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 19,
+        "name": "Apple MacBook Pro 16 - Alifa Final",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 67,
+        "name": "Lenovo K14",
+        "data": {
+            "year": "2024",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "Gray",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 60,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 46,
+        "name": "Lenovo K14",
+        "data": {
+            "year": "2024",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "black",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 22,
+        "name": "Produk coba coba",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 23,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 24,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 49,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 25,
+        "name": "Produk coba coba",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 26,
+        "name": "Produk coba coba",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 27,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 28,
+        "name": "Apple MacBook Pro 16 - Alifa",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 9,
+        "name": "Apple MacBook Pro 25 - Alifa Updated",
+        "data": {
+            "year": "2025",
+            "price": "1999.99",
+            "CPU model": "M5",
+            "Hard disk size": "2 TB",
+            "color": "grey",
+            "capacity": 1,
+            "screen_size": 13
+        }
+    },
+    {
+        "id": 30,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 31,
+        "name": "Lenovo K14",
+        "data": {
+            "year": "2024",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "black",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 32,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 33,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 50,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 83,
+        "name": "Apple MacBook Pro 1611-albert12",
+        "data": {
+            "year": "2030",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 62,
+        "name": "Apple MacBook Pro M1",
+        "data": {
+            "year": "2020",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "blue",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 51,
+        "name": "Lenovo K14",
+        "data": {
+            "year": "2024",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "black",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 53,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 17,
+        "name": "Apple MacBook Pro 1611-albert12",
+        "data": {
+            "year": "2030",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 73,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 66,
+        "name": "Lenovo K14",
+        "data": {
+            "year": "2024",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "black",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 80,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 77,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 76,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 79,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 81,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 41,
+        "name": "Edit by destia - test partiallupdate",
+        "data": {
+            "year": "2030",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 85,
+        "name": "maaf list ini sedang di test, mohon coba lagi",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 75,
+        "name": "Nah ini test untuk partial",
+        "data": {
+            "year": "1998",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 48,
+        "name": "Apple MacBook Pro 16 Nikko4",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 65,
+        "name": "Apple MacBook Pro 1611-albert12",
+        "data": {
+            "year": "2030",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "yellow",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 82,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 52,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 21,
+        "name": "Apple MacBook Pro 1611-albert12",
+        "data": {
+            "year": "2030",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "black",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 35,
+        "name": "Apple MacBook Pro 1611-albert12",
+        "data": {
+            "year": "2030",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 37,
+        "name": "Apple MacBook Pro 1611-Maria06",
+        "data": {
+            "year": "2025",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 70,
+        "name": "Apple MacBook Pro 1611-albert12",
+        "data": {
+            "year": "2030",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 78,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 87,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 88,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 89,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 90,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 91,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 93,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 135,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 95,
+        "name": "Apple MacBook Pro 16 Nikko",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 133,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 96,
+        "name": "Apple MacBook Pro 16 Nikko",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 136,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 99,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 102,
+        "name": "Apple MacBook Pro 16 Nikko",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 103,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 105,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 107,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 101,
+        "name": "Laptop Gaming Cuy",
+        "data": {
+            "year": "2025",
+            "price": "23500000",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "Black",
+            "capacity": 2,
+            "screen_size": 16
+        }
+    },
+    {
+        "id": 106,
+        "name": "Apple MacBook Pro 17",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 94,
+        "name": "Apple MacBook Pro X 22",
+        "data": {
+            "year": "2022",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 104,
+        "name": "Apple MacBook Pro 1611-albert12",
+        "data": {
+            "year": "2030",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 110,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 111,
+        "name": "Asus Notebook Yuana",
+        "data": {
+            "year": "2025",
+            "price": "1000",
+            "CPU model": "Intel I3",
+            "Hard disk size": "500 GB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 15
+        }
+    },
+    {
+        "id": 112,
+        "name": "Asus Notebook Yuana",
+        "data": {
+            "year": "2025",
+            "price": "1000",
+            "CPU model": "Intel I3",
+            "Hard disk size": "500 GB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 15
+        }
+    },
+    {
+        "id": 113,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 114,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 115,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 116,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 118,
+        "name": "Asus Notebook Yuana",
+        "data": {
+            "year": "2025",
+            "price": "1000",
+            "CPU model": "Intel I3",
+            "Hard disk size": "500 GB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 15
+        }
+    },
+    {
+        "id": 119,
+        "name": "Asus Notebook Yuana",
+        "data": {
+            "year": "2025",
+            "price": "1000",
+            "CPU model": "Intel I3",
+            "Hard disk size": "500 GB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 15
+        }
+    },
+    {
+        "id": 120,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 117,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 108,
+        "name": "Lenovo Thinkpad T14s - Drajatp",
+        "data": {
+            "year": "2024",
+            "price": "2049.99",
+            "CPU model": "Intel vPRO Enterprise",
+            "Hard disk size": "500 GB",
+            "color": "black",
+            "capacity": 4,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 123,
+        "name": "HP Notebook Yuana",
+        "data": {
+            "year": "2025",
+            "price": "4000",
+            "CPU model": "Intel I7",
+            "Hard disk size": "500 GB",
+            "color": "hitam",
+            "capacity": 2,
+            "screen_size": 15
+        }
+    },
+    {
+        "id": 128,
+        "name": "ACER Notebook Yuana",
+        "data": {
+            "year": "2024",
+            "price": "4000",
+            "CPU model": "Intel I7",
+            "Hard disk size": "500 GB",
+            "color": "hitam",
+            "capacity": 2,
+            "screen_size": 15
+        }
+    },
+    {
+        "id": 124,
+        "name": "ACER Notebook Yuana",
+        "data": {
+            "year": "2024",
+            "price": "4000",
+            "CPU model": "Intel I7",
+            "Hard disk size": "500 GB",
+            "color": "hitam",
+            "capacity": 2,
+            "screen_size": 15
+        }
+    },
+    {
+        "id": 129,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 139,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 130,
+        "name": "ACER Notebook Yuana",
+        "data": {
+            "year": "2024",
+            "price": "4000",
+            "CPU model": "Intel I7",
+            "Hard disk size": "500 GB",
+            "color": "hitam",
+            "capacity": 2,
+            "screen_size": 15
+        }
+    },
+    {
+        "id": 138,
+        "name": "Apple MacBook Pro 1611-albert12",
+        "data": {
+            "year": "2030",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 131,
+        "name": "ACER Notebook Yuana",
+        "data": {
+            "year": "2024",
+            "price": "4000",
+            "CPU model": "Intel I7",
+            "Hard disk size": "500 GB",
+            "color": "hitam",
+            "capacity": 2,
+            "screen_size": 15
+        }
+    },
+    {
+        "id": 140,
+        "name": "Acer Aspire Lite AL14-52M-54V4",
+        "data": {
+            "year": "2024",
+            "price": "10000000",
+            "CPU model": "Intel Core i5-1334 CPU @1.30-4.60Ghz",
+            "Hard disk size": "512GB SSD M2 NVMe",
+            "color": "black",
+            "capacity": 10,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 132,
+        "name": "ACER Notebook Yuana",
+        "data": {
+            "year": "2024",
+            "price": "4000",
+            "CPU model": "Intel I7",
+            "Hard disk size": "500 GB",
+            "color": "hitam",
+            "capacity": 2,
+            "screen_size": 15
+        }
+    },
+    {
+        "id": 142,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 97,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 143,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 144,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 100,
+        "name": "Apple MacBook Pro 1611-albert12",
+        "data": {
+            "year": "2030",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 145,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "CPU model": "Intel Core i9",
+            "Hard disk size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    },
+    {
+        "id": 121,
+        "name": "Apple MacBook Pro 1611-albert12",
+        "data": {
+            "year": "2030",
+            "price": "4000",
+            "CPU model": "Intel I7",
+            "Hard disk size": "500 GB",
+            "color": "hitam",
+            "capacity": 2,
+            "screen_size": 15
+        }
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testAddObject" classname="restassured.RestAssuredImpl" time="0.686">
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://whitesmokehouse.com/webhook/api/objects
 Proxy:			<none>
@@ -3763,7 +1436,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU4IiwiaWF0IjoxNzQ3NTQyMzg0fQ.0qR4baNsZA0b5RrN_L_RIGxkK4Dipuj5d-XcDSHwvSQ
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE0NyIsImlhdCI6MTc0NzYyMTA0N30.g8yhkq2H2IszrECwwS5myUQqo1v1rwSqI3hFX3CPjuI
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -3783,7 +1456,7 @@ Body:
 }
 Response: [
     {
-        "id": 185,
+        "id": 149,
         "name": "Apple MacBook Pro 16",
         "data": {
             "year": "2019",
@@ -3798,15 +1471,75 @@ Response: [
 ]
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateObject" classname="restassured.RestAssuredImpl" time="0.2">
-    <system-out><![CDATA[Request method:	PUT
-Request URI:	https://whitesmokehouse.com/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/185
+  <testcase name="SingleObject" classname="restassured.RestAssuredImpl" time="0.613">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://whitesmokehouse.com/webhook/8749129e-f5f7-4ae6-9b03-93be7252443c/api/objects/149
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU4IiwiaWF0IjoxNzQ3NTQyMzg0fQ.0qR4baNsZA0b5RrN_L_RIGxkK4Dipuj5d-XcDSHwvSQ
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE0NyIsImlhdCI6MTc0NzYyMTA0N30.g8yhkq2H2IszrECwwS5myUQqo1v1rwSqI3hFX3CPjuI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Response: {
+    "id": 149,
+    "name": "Apple MacBook Pro 16",
+    "data": {
+        "year": "2019",
+        "price": "1849.99",
+        "cpu_model": "Intel Core i9",
+        "hard_disk_size": "1 TB",
+        "color": "red",
+        "capacity": 2,
+        "screen_size": 14
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="ListOfObjectsByIds" classname="restassured.RestAssuredImpl" time="0.887">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://whitesmokehouse.com/webhook/api/objectslistId?id=3
+Proxy:			<none>
+Request params:	id=3
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE0NyIsImlhdCI6MTc0NzYyMTA0N30.g8yhkq2H2IszrECwwS5myUQqo1v1rwSqI3hFX3CPjuI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Response: [
+    {
+        "id": 149,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "cpu_model": "Intel Core i9",
+            "hard_disk_size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateObject" classname="restassured.RestAssuredImpl" time="0.67">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	https://whitesmokehouse.com/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/149
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE0NyIsImlhdCI6MTc0NzYyMTA0N30.g8yhkq2H2IszrECwwS5myUQqo1v1rwSqI3hFX3CPjuI
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -3826,7 +1559,7 @@ Body:
 }
 Response: [
     {
-        "id": 185,
+        "id": 149,
         "name": "Apple MacBook Pro 18",
         "data": {
             "year": "2019",
@@ -3841,15 +1574,48 @@ Response: [
 ]
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteObject" classname="restassured.RestAssuredImpl" time="0.159">
-    <system-out><![CDATA[Request method:	DELETE
-Request URI:	https://whitesmokehouse.com/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/185
+  <testcase name="PartiallyUpdateObject" classname="restassured.RestAssuredImpl" time="0.688">
+    <system-out><![CDATA[Request method:	PATCH
+Request URI:	https://whitesmokehouse.com/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/149
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU4IiwiaWF0IjoxNzQ3NTQyMzg0fQ.0qR4baNsZA0b5RrN_L_RIGxkK4Dipuj5d-XcDSHwvSQ
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE0NyIsImlhdCI6MTc0NzYyMTA0N30.g8yhkq2H2IszrECwwS5myUQqo1v1rwSqI3hFX3CPjuI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Apple MacBook Pro 1611-daffa",
+    "year": "2030"
+}
+Response: {
+    "id": 149,
+    "name": "Apple MacBook Pro 1611-daffa",
+    "data": {
+        "year": "2030",
+        "price": "1849.99",
+        "cpu_model": "Intel Core i9",
+        "hard_disk_size": "1 TB",
+        "color": "blue",
+        "capacity": "2 cpu",
+        "screen_size": "14 Inch"
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteObject" classname="restassured.RestAssuredImpl" time="0.617">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://whitesmokehouse.com/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/149
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE0NyIsImlhdCI6MTc0NzYyMTA0N30.g8yhkq2H2IszrECwwS5myUQqo1v1rwSqI3hFX3CPjuI
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -3857,7 +1623,7 @@ Multiparts:		<none>
 Body:			<none>
 Response: {
     "status": "deleted",
-    "message": "Object with id = 185, has been deleted."
+    "message": "Object with id = 149, has been deleted."
 }
 ]]></system-out>
   </testcase>
