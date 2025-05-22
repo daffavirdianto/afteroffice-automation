@@ -18,15 +18,16 @@ public class RestAssuredImpl {
 
     @Test
     public void testRegister() {
+        String uniqueEmail = "daffa.virdianto" + (System.currentTimeMillis() % 1000) + "@gmail.com";
 
         String requestBody = "{\n" +
-            "  \"email\": \"daffa.virdianto5@gmail.com\",\n" +
+            "  \"email\": \"" + uniqueEmail + "\",\n" +
             "  \"full_name\": \"Daffa Virdianto\",\n" +
             "  \"password\": \"D@ffa123\",\n" +
             "  \"department\": \"Human Resource\",\n" +
             "  \"phone_number\": \"081325018827\"\n" +
             "}";
-        
+
         Response response = RestAssured.given()
                 .header("Content-Type", "application/json")
                 .body(requestBody)
@@ -37,7 +38,7 @@ public class RestAssuredImpl {
         System.out.println("Response: " + response.asPrettyString());
 
         assert response.statusCode() == 200 : "Registration failed";
-        assert response.jsonPath().getString("email").equals("daffa.virdianto5@gmail.com") : "Email mismatch";
+        assert response.jsonPath().getString("email").equals(uniqueEmail) : "Email mismatch";
         assert response.jsonPath().getString("full_name").equals("Daffa Virdianto") : "Full name mismatch";
         assert response.jsonPath().getString("department").equals("Human Resource") : "Department mismatch";
         assert response.jsonPath().getString("phone_number").equals("081325018827") : "Phone number mismatch";
@@ -232,9 +233,10 @@ public class RestAssuredImpl {
         System.out.println("Response: " + response.asPrettyString());
 
         assert response.statusCode() == 200 : "Failed to get list of departments";
-        assert response.jsonPath().getString("[0].department").equals("Technology") : "Department name mismatch";
-        assert response.jsonPath().getString("[1].department").equals("Human Resource") : "Second department name mismatch";
-        assert response.jsonPath().getString("[2].department").equals("Finance") : "Third department name mismatch";
-        assert response.jsonPath().getString("[3].department").equals("Executive") : "Fourth department name mismatch";
+        String[] expectedDepartments = {"Technology", "Human Resource", "Finance", "Executive"};
+        for (int i = 0; i < expectedDepartments.length; i++) {
+            assert response.jsonPath().getString("[" + i + "].department").equals(expectedDepartments[i]) 
+            : "Department name mismatch at index " + i;
+        }
     }
 }
