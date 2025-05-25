@@ -2,6 +2,7 @@ package cucumber.runners;
 
 import org.testng.annotations.AfterSuite;
 
+import cucumber.helper.GenerateReport;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
@@ -15,6 +16,7 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 
     @AfterSuite
     public void after_suite() {
+        GenerateReport.generateReport();
         System.out.println("Cucumber runner start...");
     }
 }
