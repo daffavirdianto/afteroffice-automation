@@ -7,6 +7,9 @@ import lombok.Data;
 @Data
 public class RequestObject {
     
+    @JsonProperty("id")
+    private int id;
+
     @JsonProperty("name")
     private String name;
     
