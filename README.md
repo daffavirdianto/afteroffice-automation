@@ -41,5 +41,5 @@ mvn clean install
 
 ### Menjalankan Test
 ```bash
-mvn test
+mvn test "-DsuiteXml=src/test/resources/cucumber_suite.xml"
 ```
