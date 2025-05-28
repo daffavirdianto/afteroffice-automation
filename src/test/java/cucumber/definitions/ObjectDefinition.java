@@ -9,46 +9,22 @@ import com.apiautomation.model.ResponseUpdateObject;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import apiengine.Endpoints;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class ObjectDefinition {
+public class ObjectDefinition extends Endpoints{
     public static String baseUrl;
     public static Response response;
     public static String token;
     public static Integer objectId;
 
-    @Given("The base url is {string}")
-    public void set_base_url(String baseUrl) {
-        ObjectDefinition.baseUrl = baseUrl;
-    }
-
     @When("Send a http {string} request to {string} with body:")
     public void send_post_request(String method, String url, String body) {
-
-         switch (url) {
-            case "update-url" :
-                url = "/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/" + ObjectDefinition.objectId;
-                break;
-
-            case "delete-url" :
-                url = "/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/" + ObjectDefinition.objectId;
-
-            default:
-                break;
-        }
-
-        response = RestAssured
-                .given()
-                .contentType("application/json")
-                .header("Authorization", ObjectDefinition.token != null ? "Bearer " + ObjectDefinition.token : "")
-                .body(body)
-                .when()
-                .request(method, ObjectDefinition.baseUrl + url);
+        response = cucumberEndpoints(method, url, body);
     }
 
     @Then("The response status must be {int}")

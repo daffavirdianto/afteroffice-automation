@@ -1,9 +1,6 @@
 Feature: Object API
 
-  Background:
-    Given The base url is "https://whitesmokehouse.com"
-
-  Scenario:
+  Scenario: User Login and Object Management
     When Send a http "POST" request to "/webhook/api/login" with body:
     """
     {
@@ -14,7 +11,7 @@ Feature: Object API
     Then The response status must be 200
     And Save the token from the response to local storage
 
-  Scenario:
+  Scenario: List Objects
     Given Make sure token in local storage not empty
     When Send a http "GET" request to "/webhook/api/objects" with body:
       """
@@ -22,7 +19,7 @@ Feature: Object API
       """
     Then The response status must be 200
 
-  Scenario:
+  Scenario: Create Object
     Given Make sure token in local storage not empty
     When Send a http "POST" request to "/webhook/api/objects" with body:
     """
@@ -50,7 +47,7 @@ Feature: Object API
     And screen_size in the response must be "14 Inch"
     And color in the response must be "black"
 
-  Scenario:
+  Scenario: Get Object by ID
     Given Make sure token in local storage not empty
     When Send a http "PUT" request to "update-url" with body:
     """
@@ -77,7 +74,7 @@ Feature: Object API
     And screen_size update in the response must be "15 Inch"
     And color update in the response must be "silver"
 
-  Scenario:
+  Scenario: Delete Object
     Given Make sure token in local storage not empty
     When Send a http "DELETE" request to "delete-url" with body:
       """
