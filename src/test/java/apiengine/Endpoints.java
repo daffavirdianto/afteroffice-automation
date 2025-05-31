@@ -1,13 +1,14 @@
 package apiengine;
 
 import cucumber.definitions.ObjectDefinition;
+import helper.ConfigManager;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class Endpoints {
 
     public Endpoints() {
-        String baseUrl = "https://whitesmokehouse.com";
+        String baseUrl = ConfigManager.getBaseUrl();
         RestAssured.baseURI = baseUrl;
     }
 
