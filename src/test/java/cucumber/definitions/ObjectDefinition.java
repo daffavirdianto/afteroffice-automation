@@ -10,6 +10,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import apiengine.Endpoints;
+import context.TestContext;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -17,19 +18,24 @@ import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 
 public class ObjectDefinition extends Endpoints{
-    public static String baseUrl;
     public static Response response;
     public static String token;
     public static Integer objectId;
+    private final TestContext context;
+
+    public ObjectDefinition(TestContext context) {
+        this.context = context;
+    }
 
     @When("Send a http {string} request to {string} with body:")
     public void send_post_request(String method, String url, String body) {
         response = cucumberEndpoints(method, url, body);
+        context.setResponse(response);
     }
 
     @Then("The response status must be {int}")
     public void send_request_http(int statusCode) {
-        assert response.statusCode() == statusCode : "Error, due to actual status code is " + response.statusCode();
+        assert context.getResponse().statusCode() == statusCode : "Error, due to actual status code is " + context.getResponse().statusCode();
     }
 
     @And("Save the token from the response to local storage")

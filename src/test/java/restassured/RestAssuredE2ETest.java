@@ -5,12 +5,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.apiautomation.model.RequestObject;
-import com.apiautomation.model.RequestCreateObject;
-import com.apiautomation.model.RequestLogin;
 import com.apiautomation.model.ResponseObject;
 import com.apiautomation.model.ResponseCreateObject;
 import com.apiautomation.model.ResponseUpdateObject;
+import com.apiautomation.model.request.RequestCreateObject;
+import com.apiautomation.model.request.RequestLogin;
+import com.apiautomation.model.request.RequestObject;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

@@ -1,6 +1,6 @@
 Feature: Object API
 
-  Scenario: User Login and Object Management
+  Scenario: User Login
     When Send a http "POST" request to "/webhook/api/login" with body:
     """
     {
