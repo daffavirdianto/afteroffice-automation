@@ -1,6 +1,6 @@
 package apiengine;
 
-import cucumber.definitions.ObjectDefinition;
+import cucumber.stepdefinitions.ObjectDefinition;
 import helper.ConfigManager;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

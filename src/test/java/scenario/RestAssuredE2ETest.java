@@ -1,16 +1,16 @@
-package restassured;
+package scenario;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.apiautomation.model.ResponseObject;
+import com.apiautomation.model.ResponseObjectWithLombok;
 import com.apiautomation.model.ResponseCreateObject;
 import com.apiautomation.model.ResponseUpdateObject;
 import com.apiautomation.model.request.RequestCreateObject;
 import com.apiautomation.model.request.RequestLogin;
-import com.apiautomation.model.request.RequestObject;
+import com.apiautomation.model.request.RequestObjectWithLombok;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -115,10 +115,10 @@ public class RestAssuredE2ETest {
          */
         @Test(priority = 2)
         public void updateObject() {
-                RequestObject requestAddObject = new RequestObject();
+                RequestObjectWithLombok requestAddObject = new RequestObjectWithLombok();
                 requestAddObject.setName("Apple MacBook Pro 16");
 
-                RequestObject.DataObject dataObject = new RequestObject.DataObject();
+                RequestObjectWithLombok.DataObject dataObject = new RequestObjectWithLombok.DataObject();
                 dataObject.setYear(2019);
                 dataObject.setPrice(1849.99);
                 dataObject.setCpu_model("Intel Core i9");
@@ -137,7 +137,7 @@ public class RestAssuredE2ETest {
                                 .post("/webhook/api/objects");
 
                 objectId = responseAddObject.jsonPath().getInt("[0].id");
-                ResponseObject[] responseObject = responseAddObject.as(ResponseObject[].class);
+                ResponseObjectWithLombok[] responseObject = responseAddObject.as(ResponseObjectWithLombok[].class);
                 Assert.assertEquals(responseObject[0].getName(), "Apple MacBook Pro 16",
                                 "Object name is not as expected");
                 Assert.assertEquals(responseObject[0].getData().getYear(), 2019,
@@ -155,10 +155,10 @@ public class RestAssuredE2ETest {
                 Assert.assertEquals(responseObject[0].getData().getColor(), "red",
                                 "Object color is not as expected");
 
-                RequestObject requestUpdateObject = new RequestObject();
+                RequestObjectWithLombok requestUpdateObject = new RequestObjectWithLombok();
                 requestUpdateObject.setName("Apple MacBook Pro 18");
 
-                RequestObject.DataObject dataUpdateObject = new RequestObject.DataObject();
+                RequestObjectWithLombok.DataObject dataUpdateObject = new RequestObjectWithLombok.DataObject();
                 dataUpdateObject.setYear(2019);
                 dataUpdateObject.setPrice(1849.99);
                 dataUpdateObject.setCpu_model("Intel Core i9");
@@ -206,7 +206,7 @@ public class RestAssuredE2ETest {
 
                 System.out.println("Response: " + response.asPrettyString());
 
-                ResponseObject[] responseList = response.as(ResponseObject[].class);
+                ResponseObjectWithLombok[] responseList = response.as(ResponseObjectWithLombok[].class);
                 Assert.assertEquals(responseList[0].getName(), "Apple MacBook Pro 18",
                                 "Object name is not as expected");
                 Assert.assertEquals(responseList[0].getData().getYear(), 2019,

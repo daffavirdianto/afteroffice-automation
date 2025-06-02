@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/resources",
-        glue = "cucumber.definitions",
+        glue = "cucumber.stepdefinitions",
         plugin = {"pretty", "json:target/cucumber.json"},
         monochrome = true
 )

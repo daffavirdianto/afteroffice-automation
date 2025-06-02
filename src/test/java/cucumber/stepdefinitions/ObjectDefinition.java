@@ -1,10 +1,10 @@
-package cucumber.definitions;
+package cucumber.stepdefinitions;
 
 import java.util.List;
 
 import org.testng.Assert;
 
-import com.apiautomation.model.ResponseObject;
+import com.apiautomation.model.ResponseObjectWithLombok;
 import com.apiautomation.model.ResponseUpdateObject;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -56,70 +56,70 @@ public class ObjectDefinition extends Endpoints{
     @And("name in the response must be {string}")
     public void assert_name(String name) throws Exception{
         ObjectMapper objectMapper = new ObjectMapper();
-        List<ResponseObject> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObject>>() {});
+        List<ResponseObjectWithLombok> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObjectWithLombok>>() {});
         Assert.assertEquals(responseObjects.get(0).getName(), name, "Object name is not as expected");
     }
 
     @And("year in the response must be {int}")
     public void assert_year(int year) throws Exception{
         ObjectMapper objectMapper = new ObjectMapper();
-        List<ResponseObject> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObject>>() {});
+        List<ResponseObjectWithLombok> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObjectWithLombok>>() {});
  
-        ResponseObject.DataObject data = responseObjects.get(0).getData();
+        ResponseObjectWithLombok.DataObject data = responseObjects.get(0).getData();
         Assert.assertEquals(data.getYear(), year, "Object year is not as expected");
     }
 
     @And("price in the response must be {double}")
     public void assert_price(double price) throws Exception{
         ObjectMapper objectMapper = new ObjectMapper();
-        List<ResponseObject> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObject>>() {});
+        List<ResponseObjectWithLombok> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObjectWithLombok>>() {});
  
-        ResponseObject.DataObject data = responseObjects.get(0).getData();
+        ResponseObjectWithLombok.DataObject data = responseObjects.get(0).getData();
         Assert.assertEquals(data.getPrice(), price, "Object price is not as expected");
     }
 
     @And("cpu_model in the response must be {string}")
     public void assert_cpu_model(String cpuModel) throws Exception{
         ObjectMapper objectMapper = new ObjectMapper();
-        List<ResponseObject> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObject>>() {});
+        List<ResponseObjectWithLombok> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObjectWithLombok>>() {});
  
-        ResponseObject.DataObject data = responseObjects.get(0).getData();
+        ResponseObjectWithLombok.DataObject data = responseObjects.get(0).getData();
         Assert.assertEquals(data.getCpu_model(), cpuModel, "Object cpu model is not as expected");
     }
 
     @And("hard_disk_size in the response must be {string}")
     public void assert_hard_disk_size(String hardDiskSize) throws Exception{
         ObjectMapper objectMapper = new ObjectMapper();
-        List<ResponseObject> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObject>>() {});
+        List<ResponseObjectWithLombok> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObjectWithLombok>>() {});
  
-        ResponseObject.DataObject data = responseObjects.get(0).getData();
+        ResponseObjectWithLombok.DataObject data = responseObjects.get(0).getData();
         Assert.assertEquals(data.getHard_disk_size(), hardDiskSize, "Object hard disk size is not as expected");
     }
 
     @And("capacity in the response must be {string}")
     public void assert_capacity(String capacity) throws Exception{
         ObjectMapper objectMapper = new ObjectMapper();
-        List<ResponseObject> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObject>>() {});
+        List<ResponseObjectWithLombok> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObjectWithLombok>>() {});
  
-        ResponseObject.DataObject data = responseObjects.get(0).getData();
+        ResponseObjectWithLombok.DataObject data = responseObjects.get(0).getData();
         Assert.assertEquals(data.getCapacity(), capacity, "Object capacity is not as expected");
     }
 
     @And("screen_size in the response must be {string}")
     public void assert_screen_size(String screenSize) throws Exception{
         ObjectMapper objectMapper = new ObjectMapper();
-        List<ResponseObject> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObject>>() {});
+        List<ResponseObjectWithLombok> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObjectWithLombok>>() {});
  
-        ResponseObject.DataObject data = responseObjects.get(0).getData();
+        ResponseObjectWithLombok.DataObject data = responseObjects.get(0).getData();
         Assert.assertEquals(data.getScreen_size(), screenSize, "Object screen_size is not as expected");
     }
 
     @And("color in the response must be {string}")
     public void assert_color(String color) throws Exception{
         ObjectMapper objectMapper = new ObjectMapper();
-        List<ResponseObject> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObject>>() {});
+        List<ResponseObjectWithLombok> responseObjects = objectMapper.readValue(response.body().asString(), new TypeReference<List<ResponseObjectWithLombok>>() {});
  
-        ResponseObject.DataObject data = responseObjects.get(0).getData();
+        ResponseObjectWithLombok.DataObject data = responseObjects.get(0).getData();
         Assert.assertEquals(data.getColor(), color, "Object color is not as expected");
     }
 

@@ -30,12 +30,12 @@ public class DataRequest {
     public Map<String, String> addLoginCollection() {
         Map<String, String> request = new HashMap<>();
 
-        request.put("addLogin", "{\n" +
+        request.put("loginValid", "{\n" +
                 "  \"email\": \"daffa.virdianto1@gmail.com\",\n" +
                 "  \"password\": \"D@ffa123\"\n" +
                 "}");
         
-        request.put("addLoginFailed", "{\n" +
+        request.put("loginInvalid", "{\n" +
                 "  \"email\": \",\n" +
                 "  \"password\": \"D@ffa123\"\n" +
                 "}");
