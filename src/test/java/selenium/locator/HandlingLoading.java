@@ -15,7 +15,7 @@ public class HandlingLoading {
     @Test
     public void implicitlyWait(){
         // Setup WebDriver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Daffa Virdianto\\apiautomation\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Daffa Virdianto\\afteroffice-automation\\chromedriver.exe");
         //Admin
         driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/loginpagePractise/");
@@ -28,7 +28,7 @@ public class HandlingLoading {
     @Test
     public void explicitlyWait() throws InterruptedException {
         // Setup WebDriver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Daffa Virdianto\\apiautomation\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Daffa Virdianto\\afteroffice-automation\\chromedriver.exe");
         //Admin
         driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/loginpagePractise/");

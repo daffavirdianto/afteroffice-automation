@@ -1,12 +1,11 @@
-package com.apiautomation.model.request;
+package com.afteroffice.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.Data;
 
 @Data
-public class RequestObjectWithLombok {
-    
+public class ResponseObjectWithLombok {
     @JsonProperty("id")
     private int id;
 

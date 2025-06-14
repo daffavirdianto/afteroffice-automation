@@ -1,12 +1,12 @@
-package com.apiautomation.model;
+package com.afteroffice.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.Data;
 
 @Data
-public class ResponseObjectWithLombok {
-    @JsonProperty("id")
+public class ResponseUpdateObject {
+@JsonProperty("id")
     private int id;
 
     @JsonProperty("name")
@@ -22,10 +22,10 @@ public class ResponseObjectWithLombok {
         @JsonProperty("price")
         private double price;
 
-        @JsonProperty("cpu_model")
+        @JsonProperty("CPU model")
         private String cpu_model;
 
-        @JsonProperty("hard_disk_size")
+        @JsonProperty("Hard disk size")
         private String hard_disk_size;
 
         @JsonProperty("capacity")

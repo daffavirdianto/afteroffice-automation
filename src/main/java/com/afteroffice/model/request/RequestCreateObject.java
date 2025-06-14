@@ -1,4 +1,4 @@
-package com.apiautomation.model.request;
+package com.afteroffice.model.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

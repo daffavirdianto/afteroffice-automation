@@ -2,8 +2,8 @@ package apiengine;
 
 import org.testng.Assert;
 
-import com.apiautomation.model.ResponseCreateObject;
-import com.apiautomation.model.request.RequestCreateObject;
+import com.afteroffice.model.ResponseCreateObject;
+import com.afteroffice.model.request.RequestCreateObject;
 
 public class Assertion {
 

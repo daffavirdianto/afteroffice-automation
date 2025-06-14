@@ -16,7 +16,7 @@ public class HandleWindow {
     @Test
     public void handleWindowTest() throws InterruptedException {
         // Setup WebDriver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Daffa Virdianto\\apiautomation\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Daffa Virdianto\\afteroffice-automation\\chromedriver.exe");
         //Admin
         driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/loginpagePractise/");

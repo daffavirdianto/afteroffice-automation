@@ -14,7 +14,7 @@ public class Login {
     @BeforeMethod
     public void setup() throws InterruptedException{
         // Setup WebDriver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Daffa Virdianto\\apiautomation\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Daffa Virdianto\\afteroffice-automation\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/client");
         driver.manage().window().maximize();
