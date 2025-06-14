@@ -28,6 +28,7 @@ public class PracticeSiteAutomation {
     @Test
     public void practiceSiteTest() throws InterruptedException {
 
+        // Handle Radio Button
         driver.findElement(By.cssSelector("input[value='radio2']")).click();
 
         WebElement autocomplete = driver.findElement(By.id("autocomplete"));
@@ -59,6 +60,7 @@ public class PracticeSiteAutomation {
         }
         driver.switchTo().window(parentWindow);
 
+        // Handle alert
         driver.findElement(By.id("name")).sendKeys("Tester");
         driver.findElement(By.id("alertbtn")).click();
         driver.switchTo().alert().accept();
