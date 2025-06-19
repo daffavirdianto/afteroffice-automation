@@ -30,7 +30,6 @@ public class Login {
         //Insert credential
         driver.findElement(By.id("userEmail")).sendKeys("simanjuntakalbert57@gmail.com");
         driver.findElement(By.id("userPassword")).sendKeys("XBf@rWNvByn!#K8");
-
         driver.findElement(By.id("login")).click();
 
         String homepage = driver.findElement(By.xpath("//div[@class = 'left mt-1']/p")).getText();
