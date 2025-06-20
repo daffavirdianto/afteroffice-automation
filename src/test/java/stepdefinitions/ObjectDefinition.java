@@ -1,4 +1,4 @@
-package cucumber.stepdefinitions;
+package stepdefinitions;
 
 import java.util.List;
 

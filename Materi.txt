@@ -1,0 +1,24 @@
+BOOTCAMP AUTOMATION
+API - AUTOMATION
+1. Simple Test With Anotation And testsuite
+    @BeforeSuite
+        @BeforeTest
+                @BeforeClass
+                    @BeforeMethod
+                        @Test
+                    @AfterMethod
+                @AfterClass
+        @AfterTest
+    @AfterSuite
+
+2. TestNg Assertion, retry mecanism, data provider
+3. Rest Assured
+4. E2E Test With POJO And Schema Validation
+5. Cucumber
+6. Refactor Code With api engine, constant and .env
+
+WEB - AUTOMATION
+1. Locator technique
+2. E2E Test and TestNg
+3. Implement POM
+4. Cucumber And hook

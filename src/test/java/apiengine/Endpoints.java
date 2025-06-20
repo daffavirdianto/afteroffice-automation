@@ -1,9 +1,9 @@
 package apiengine;
 
-import cucumber.stepdefinitions.ObjectDefinition;
 import helper.ConfigManager;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import stepdefinitions.ObjectDefinition;
 
 public class Endpoints {
 

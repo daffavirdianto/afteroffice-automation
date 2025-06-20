@@ -1,4 +1,4 @@
-package cucumber.helper;
+package helper;
 
 import java.io.File;
 import java.util.Collections;
