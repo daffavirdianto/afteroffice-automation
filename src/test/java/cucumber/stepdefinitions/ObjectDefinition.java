@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.testng.Assert;
 
-import com.apiautomation.model.ResponseObjectWithLombok;
-import com.apiautomation.model.ResponseUpdateObject;
+import com.afteroffice.model.ResponseObjectWithLombok;
+import com.afteroffice.model.ResponseUpdateObject;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

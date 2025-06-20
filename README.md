@@ -19,12 +19,12 @@ Pastikan kamu sudah mengatur SSH key GitHub. Jika belum, bisa gunakan HTTPS.
 
 ### Clone dengan SSH
 ```bash
-git clone git@github.com:daffavirdianto/apiautomation.git
+git clone git@github.com:daffavirdianto/afteroffice-automation.git
 ```
 
 ### Masuk Ke Folder
 ```bash
-cd apiautomation
+cd afteroffice-automation
 ```
 
 ### Instalasi Dependency

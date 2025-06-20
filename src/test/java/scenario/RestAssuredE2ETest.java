@@ -5,12 +5,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.apiautomation.model.ResponseObjectWithLombok;
-import com.apiautomation.model.ResponseCreateObject;
-import com.apiautomation.model.ResponseUpdateObject;
-import com.apiautomation.model.request.RequestCreateObject;
-import com.apiautomation.model.request.RequestLogin;
-import com.apiautomation.model.request.RequestObjectWithLombok;
+import com.afteroffice.model.ResponseCreateObject;
+import com.afteroffice.model.ResponseObjectWithLombok;
+import com.afteroffice.model.ResponseUpdateObject;
+import com.afteroffice.model.request.RequestCreateObject;
+import com.afteroffice.model.request.RequestLogin;
+import com.afteroffice.model.request.RequestObjectWithLombok;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
