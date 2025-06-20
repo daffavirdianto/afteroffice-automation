@@ -1,4 +1,4 @@
-package selenium.selenium_scenario.pom;
+package selenium.rahulshettyacademy.pom;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -8,8 +8,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.afteroffice.base.BaseTest;
-import com.afteroffice.pageobjects.DashboardPage;
-import com.afteroffice.pageobjects.LoginPage;
+import com.afteroffice.pageobjects.rahulshettyacademy.DashboardPage;
+import com.afteroffice.pageobjects.rahulshettyacademy.LoginPage;
 
 public class Login extends BaseTest {
 

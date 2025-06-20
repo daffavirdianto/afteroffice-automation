@@ -1,4 +1,4 @@
-package selenium.selenium_scenario;
+package selenium.rahulshettyacademy;
 
 import org.testng.annotations.Test;
 

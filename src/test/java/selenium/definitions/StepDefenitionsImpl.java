@@ -3,11 +3,11 @@ package selenium.definitions;
 import org.testng.Assert;
 
 import com.afteroffice.base.BaseTest;
-import com.afteroffice.pageobjects.CartPage;
-import com.afteroffice.pageobjects.ConfirmationPage;
-import com.afteroffice.pageobjects.DashboardPage;
-import com.afteroffice.pageobjects.LoginPage;
-import com.afteroffice.pageobjects.OrderPage;
+import com.afteroffice.pageobjects.rahulshettyacademy.CartPage;
+import com.afteroffice.pageobjects.rahulshettyacademy.ConfirmationPage;
+import com.afteroffice.pageobjects.rahulshettyacademy.DashboardPage;
+import com.afteroffice.pageobjects.rahulshettyacademy.LoginPage;
+import com.afteroffice.pageobjects.rahulshettyacademy.OrderPage;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;

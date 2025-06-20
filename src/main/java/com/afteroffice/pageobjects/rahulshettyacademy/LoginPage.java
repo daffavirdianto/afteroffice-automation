@@ -1,4 +1,4 @@
-package com.afteroffice.pageobjects;
+package com.afteroffice.pageobjects.rahulshettyacademy;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

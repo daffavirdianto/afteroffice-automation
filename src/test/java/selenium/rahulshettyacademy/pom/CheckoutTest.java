@@ -1,13 +1,13 @@
-package selenium.selenium_scenario.pom;
+package selenium.rahulshettyacademy.pom;
 
 import org.testng.annotations.Test;
 
 import com.afteroffice.base.BaseTest;
-import com.afteroffice.pageobjects.CartPage;
-import com.afteroffice.pageobjects.ConfirmationPage;
-import com.afteroffice.pageobjects.DashboardPage;
-import com.afteroffice.pageobjects.LoginPage;
-import com.afteroffice.pageobjects.OrderPage;
+import com.afteroffice.pageobjects.rahulshettyacademy.CartPage;
+import com.afteroffice.pageobjects.rahulshettyacademy.ConfirmationPage;
+import com.afteroffice.pageobjects.rahulshettyacademy.DashboardPage;
+import com.afteroffice.pageobjects.rahulshettyacademy.LoginPage;
+import com.afteroffice.pageobjects.rahulshettyacademy.OrderPage;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;

@@ -1,4 +1,4 @@
-package selenium.selenium_scenario;
+package selenium.rahulshettyacademy;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
