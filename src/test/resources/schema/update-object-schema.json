@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "year": {
+              "type": "string"
+            },
+            "price": {
+              "type": "number"
+            },
+            "CPU model": {
+              "type": "string"
+            },
+            "Hard disk size": {
+              "type": "string"
+            },
+            "color": {
+              "type": "string"
+            },
+            "capacity": {
+              "type": "string"
+            },
+            "screen_size": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "year",
+            "price",
+            "CPU model",
+            "Hard disk size",
+            "color",
+            "capacity",
+            "screen_size"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "data"
+      ]
+    }
+  ]
+}
