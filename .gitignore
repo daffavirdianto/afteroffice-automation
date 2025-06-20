@@ -38,4 +38,4 @@ test-output/
 lib/
 
 # Driver
-chromedriver
+.exe
