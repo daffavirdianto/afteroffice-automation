@@ -9,5 +9,9 @@ public class ConfigManager {
     public static String getBaseUrl(){
         return dotenv.get("BASE_URL");
     }
+
+    public static String getDemoUrl(){
+        return dotenv.get("DEMO_URL");
+    }
     
 }

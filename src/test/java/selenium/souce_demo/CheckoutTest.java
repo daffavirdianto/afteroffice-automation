@@ -1,40 +1,45 @@
 package selenium.souce_demo;
 
-import java.time.Duration;
-import java.util.HashMap;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
-import java.util.Random;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class CheckoutTest {
+import com.afteroffice.base.BaseTest;
+import com.afteroffice.pageobjects.CartPage;
+import com.afteroffice.pageobjects.CheckoutPage;
+import com.afteroffice.pageobjects.CompletePage;
+import com.afteroffice.pageobjects.LoginPage;
+import com.afteroffice.pageobjects.OverviewPage;
+import com.afteroffice.pageobjects.ProductPage;
 
-    WebDriver driver;
+import helper.ConfigManager;
+
+public class CheckoutTest extends BaseTest {
+
+    LoginPage loginPage;
+    ProductPage productPage;
+    CartPage cartPage;
+    CheckoutPage checkoutPage;
+    OverviewPage overviewPage;
+    CompletePage completePage;
+    String productName = "Sauce Labs Fleece Jacket";
+    List<String> productNames = Arrays.asList("Sauce Labs Backpack", "Sauce Labs Bike Light");
 
     @BeforeClass
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Daffa Virdianto\\afteroffice-automation\\chromedriver.exe");
-        
-        ChromeOptions options = new ChromeOptions();
-        
-        // Disable password leak detection pop-up
-        Map<String, Object> prefs = new HashMap<>();
-        prefs.put("profile.password_manager_leak_detection", false);
-        options.setExperimentalOption("prefs", prefs);
+        String demoUrl = ConfigManager.getDemoUrl();
+        super.setUp(demoUrl);
 
-        driver = new ChromeDriver(options);
-        driver.get("https://www.saucedemo.com/");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        loginPage = new LoginPage(driver);
+        productPage = new ProductPage(driver);
+        cartPage = new CartPage(driver);
+        checkoutPage = new CheckoutPage(driver);
+        overviewPage = new OverviewPage(driver);
+        completePage = new CompletePage(driver);
     }
 
     /*
@@ -48,113 +53,105 @@ public class CheckoutTest {
      */
     @Test
     public void validLoginCredentials() throws InterruptedException {
-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
-        driver.findElement(By.id("login-button")).click();
-        Thread.sleep(2000);
-        String productsTitle = driver.findElement(By.xpath("//span[@class='title']")).getText();
-        Assert.assertEquals(productsTitle, "Products", "Product title does not match!");
+        System.out.println("Login Valid Credentials Test Started");
+        loginPage.login("standard_user", "secret_sauce");
+        Assert.assertEquals(productPage.getProductTitle(), "Products", "Product title does not match!");
     }
 
     @Test(priority = 1, dependsOnMethods = { "validLoginCredentials" })
     public void checkoutWithSingleProduct() throws InterruptedException {
-        // Add a product to the cart
-        List<WebElement> addToCartButtons = driver.findElements(By.xpath("//button[contains(@data-test,'add-to-cart')]"));
-        System.out.println("Number of products available: " + addToCartButtons.size());
+        // Product Page
+        productPage.addToCart(productName);
+        productPage.clickOnCartButton();
 
-        int randomIndex = new Random().nextInt(addToCartButtons.size());
-        addToCartButtons.get(randomIndex).click();
-        Thread.sleep(3000);
+        // Cart Page
+        Assert.assertTrue(cartPage.verifyCheckoutProduct(productName), "Product not found in cart!");
+        cartPage.goToCheckoutPage();
 
-        // Proceed to checkout
-        driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
-        Thread.sleep(3000);
+        // Fill in shipping information (Checkout)
+        checkoutPage.fillShippingInformation("Daffa", "Virdianto", "12345");
+        checkoutPage.clickContinue();
 
-        driver.findElement(By.id("checkout")).click();
-        Thread.sleep(3000);
+        // Complete the purchase (Overview)
+        overviewPage.clickFinishButton();
 
-        // Fill in shipping information
-        driver.findElement(By.id("first-name")).sendKeys("Daffa");
-        driver.findElement(By.id("last-name")).sendKeys("Virdianto");
-        driver.findElement(By.id("postal-code")).sendKeys("12345");
-        driver.findElement(By.id("continue")).click();
-
-        // Complete the purchase
-        driver.findElement(By.id("finish")).click();
-        Thread.sleep(3000);
-
-        // Verify order confirmation page is displayed
-        String confirmationMessage = driver.findElement(By.xpath("//h2[@class='complete-header']")).getText();
-        Assert.assertEquals(confirmationMessage, "Thank you for your order!",
+        // Verify order confirmation page is displayed (Complete)
+        Assert.assertEquals(completePage.getCompleteMessage(), "Thank you for your order!",
                 "Order confirmation message does not match!");
-        Thread.sleep(3000);
 
-        driver.findElement(By.id("back-to-products")).click();
-        Thread.sleep(2000);
+        completePage.clickBackToProducts();
     }
 
     /*
      * Checkout with Multiple Products, Remove from Cart, and Reset App State Test
      * Case:
      * 1. Add multiple products to the cart.
-     * 2. Remove one or more products from the cart.
-     * 3. Verify the removed products are no longer in the cart.
-     * 4. Reset the app state.
-     * 5. Verify the cart is empty.
+     * 2. Proceed to checkout.
+     * 3. Fill in shipping information.
+     * 4. Complete the purchase.
+     * 5. Verify the order confirmation page is displayed.
      */
     @Test(priority = 2, dependsOnMethods = "validLoginCredentials")
     public void checkoutWithMultipleProducts() throws InterruptedException {
         // Add multiple products to the cart
-        List<WebElement> addToCartButtons = driver.findElements(By.xpath("//button[contains(@data-test,'add-to-cart')]"));
-        System.out.println("Number of products available: " + addToCartButtons.size());
-
-        for (WebElement button : addToCartButtons) {
-            button.click();
-            Thread.sleep(1000);
-        }
+        productPage.addToMultipleProductsToCart(productNames);
+        productPage.clickOnCartButton();
 
         // Proceed to checkout
-        driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
-        Thread.sleep(3000);
-        
-        // Remove one product from the cart
-        driver.findElement(By.xpath("//button[contains(@data-test,'remove-sauce-labs-backpack')]")).click();
-        Thread.sleep(2000);
+        Assert.assertTrue(cartPage.verifyMultipleCheckoutProduct(productNames),
+                "Product not found in cart!");
+        cartPage.goToCheckoutPage();
 
-        driver.findElement(By.xpath("//button[contains(@data-test,'remove-sauce-labs-bike-light')]")).click();
-        Thread.sleep(2000);
+        // Fill in shipping information (Checkout)
+        checkoutPage.fillShippingInformation("Daffa", "Virdianto", "12345");
+        checkoutPage.clickContinue();
 
-        driver.findElement(By.id("continue-shopping")).click();
-        Thread.sleep(2000);
+        // Complete the purchase (Overview)
+        overviewPage.clickFinishButton();
 
-        driver.findElement(By.id("react-burger-menu-btn")).click();
-        Thread.sleep(2000);
+        // Verify order confirmation page is displayed (Complete)
+        Assert.assertEquals(completePage.getCompleteMessage(), "Thank you for your order!",
+                "Order confirmation message does not match!");
 
-        driver.findElement(By.id("reset_sidebar_link")).click();
-        Thread.sleep(2000);
+        completePage.clickBackToProducts();
+    }
 
-        driver.findElement(By.id("react-burger-cross-btn")).click();
-        Thread.sleep(2000);
+    /*
+     * Remove from Cart and Reset App State Test Case:
+     * 1. Add a product to the cart.
+     * 2. Remove the product from the cart.
+     * 3. Verify the cart is empty.
+     * 4. Reset the app state.
+     * 5. Verify the cart is empty.
+     */
+    @Test(priority = 3, dependsOnMethods = "validLoginCredentials")
+    public void removeFromCartAndResetAppState() throws InterruptedException {
+        // Add products to the cart
+        productPage.addToCart(productName);
+        productPage.clickOnCartButton();
 
-        driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
-        Thread.sleep(3000);
+        Assert.assertTrue(cartPage.verifyCheckoutProduct(productName), "Product not found in cart!");
+
+        cartPage.removeProductFromCart(productName);
+        Assert.assertFalse(cartPage.verifyCheckoutProduct(productName), "Product still found in cart after removal!");
+
+        cartPage.continueShopping();
+
+        productPage.addToCart(productName);
+        productPage.clickOnMenuButton();
+        productPage.resetAppState();
+        productPage.clickOnCrossButton();
+        productPage.clickOnCartButton();
 
         // Verify the cart is empty
-        List<WebElement> cartItems = driver.findElements(By.className("cart_item"));
-        Assert.assertEquals(cartItems.size(), 0, "Cart is not empty after reset!");
-        Thread.sleep(2000);
-
-        driver.findElement(By.id("react-burger-menu-btn")).click();
-        Thread.sleep(2000);
-
-        driver.findElement(By.id("logout_sidebar_link")).click();
-        Thread.sleep(2000);
+        Assert.assertFalse(cartPage.isItemCartVisible(), "Cart is not empty after reset!");
+        cartPage.continueShopping();
+        productPage.clickOnMenuButton();
+        productPage.clickOnLogoutButton();
     }
 
     @AfterClass
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
+        super.tearDown();
     }
 }
