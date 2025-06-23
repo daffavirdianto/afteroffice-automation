@@ -100,6 +100,7 @@ public class ProductPage extends AbstractComponent {
                 .stream()
                 .map(e -> e.getText().replace("$", ""))
                 .map(Double::parseDouble)
+                .sorted()
                 .collect(Collectors.toList());
 
         System.out.println("Price Low To High : " + prices);
@@ -160,28 +161,26 @@ public class ProductPage extends AbstractComponent {
         return productNames.equals(sortedNames);
     }
 
-    public void selectLowToHighOption() throws InterruptedException {
+    private void selectFilterOption(By option) throws InterruptedException {
         driver.findElement(filterDropdown).click();
-        driver.findElement(lowToHighOption).click();
+        driver.findElement(option).click();
         Thread.sleep(2000);
+    }
+
+    public void selectLowToHighOption() throws InterruptedException {
+        selectFilterOption(lowToHighOption);
     }
 
     public void selectHighToLowOption() throws InterruptedException {
-        driver.findElement(filterDropdown).click();
-        driver.findElement(highToLowOption).click();
-        Thread.sleep(2000);
+        selectFilterOption(highToLowOption);
     }
 
     public void selectAToZOption() throws InterruptedException {
-        driver.findElement(filterDropdown).click();
-        driver.findElement(aToZOption).click();
-        Thread.sleep(2000);
+        selectFilterOption(aToZOption);
     }
 
     public void selectZToAOption() throws InterruptedException {
-        driver.findElement(filterDropdown).click();
-        driver.findElement(zToAOption).click();
-        Thread.sleep(2000);
+        selectFilterOption(zToAOption);
     }
 
     public void clickOnMenuButton() {

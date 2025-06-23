@@ -26,11 +26,10 @@ public class LoginPage {
 
     By errorMessage = By.xpath("//h3[@data-test='error']");
 
-    public void login(String username, String password) throws InterruptedException {
+    public void login(String username, String password) {
         usernameInput.sendKeys(null == username ? "" : username);
         passwordInput.sendKeys(null == password ? "" : password);
         loginButton.click();
-        Thread.sleep(2000);
     }
 
     public String getErrorMessage() {
