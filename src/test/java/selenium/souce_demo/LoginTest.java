@@ -1,19 +1,21 @@
 package selenium.souce_demo;
 
-import java.time.Duration;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class LoginTest {
+import com.afteroffice.base.BaseTest;
+import com.afteroffice.pageobjects.LoginPage;
+import com.afteroffice.pageobjects.ProductPage;
 
-    WebDriver driver;
+import helper.ConfigManager;
+
+public class LoginTest extends BaseTest {
+
+    LoginPage loginPage;
+    ProductPage productPage;
 
     /*
      * Login Test Case:
@@ -23,37 +25,25 @@ public class LoginTest {
      * 4. empty Email, valid Password = secret_sauce, Epic sadface: Username is required
      */
     @BeforeMethod
-    public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Daffa Virdianto\\afteroffice-automation\\chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.get("https://www.saucedemo.com/");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    public void setUp() throws InterruptedException {
+        String demoUrl = ConfigManager.getDemoUrl();
+        super.setUp(demoUrl);
+        loginPage = new LoginPage(driver);
+        productPage = new ProductPage(driver);
     }
 
     @Test
     public void validLoginCredentials() throws InterruptedException {
-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
-        driver.findElement(By.id("login-button")).click();
-        Thread.sleep(2000);
-
-        String ProductsTitle = driver.findElement(By.xpath("//span[@class='title']")).getText();
-
-        Assert.assertEquals(ProductsTitle, "Products", "Product title does not match!");
+        System.out.println("Login Valid Credentials Test Started");
+        loginPage.login("standard_user", "secret_sauce");
+        Assert.assertEquals(productPage.getProductTitle(), "Products", "Product title does not match!");
     }
 
     @Test(dataProvider = "invalidCredentialsData")
     public void invalidLoginCredentials(String username, String password, String expectedErrorMessage) throws InterruptedException {
-        driver.findElement(By.id("user-name")).sendKeys(username);
-        driver.findElement(By.id("password")).sendKeys(password);
-        driver.findElement(By.id("login-button")).click();
-
-        Thread.sleep(2000);
-        String errorMessage = driver.findElement(By.xpath("//h3[@data-test='error']")).getText();
-
-        Assert.assertEquals(errorMessage, expectedErrorMessage, "Error message does not match!");
-
+        System.out.println("Login Invalid Credentials Test Started");
+        loginPage.login(username, password);
+        Assert.assertEquals(loginPage.getErrorMessage(), expectedErrorMessage, "Error message does not match!");
     }
 
     @DataProvider(name = "invalidCredentialsData")
@@ -67,8 +57,6 @@ public class LoginTest {
 
     @AfterMethod
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
+        super.tearDown();
     }
 }
